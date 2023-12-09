@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Gaji</title>
+  </head>
+  <body>
+    <h2>Input Gaji</h2>
+    <form action="/predict" method="post">
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" required><br>
+
+        <label for="education">Education:</label>
+        <select id="education" name="education" required>
+            <option value="0">Bachelors</option>
+            <option value="1">Some-college</option>
+            <option value="10">Doctorate</option>
+        </select><br>   
+
+        <label for="occupation">Occupation:</label>
+        <select id="occupation" name="occupation" required>
+            <option value="0">Craft-repair</option>
+            <option value="1">Tech-support</option>
+            <option value="3">Exec-managerial</option>
+            <!-- ... (tambahkan opsi pekerjaan lainnya) ... -->
+        </select><br>
+
+        <label for="hours-per-week">Hours per Week:</label>
+        <input type="text" id="hours-per-week" name="hours_per_week" required><br>
+
+        <label for="native-country">Native Country:</label>
+        <select id="native-country" name="native_country" required>
+            <option value="38">Cambodia</option>
+            <option value="1">United States</option>
+            <!-- ... (tambahkan opsi negara lainnya) ... -->
+        </select><br>
+
+      <br /><br />
+      <input type="submit" value="Prediksi" />
+    </form>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hasil Prediksi</title>
+  </head>
+  <body>
+    <h2>Hasil Prediksi</h2>
+    <p>Hasil prediksi untuk gaji yang dimasukkan:</p>
+    <p><strong>Prediksi:</strong> {{ prediction }}</p>
+  </body>
+</html>

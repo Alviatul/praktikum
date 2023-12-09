@@ -1,0 +1,6 @@
+myenv/
+mod6/
+__pycache__
+income_hasil.h5
+income_hasil.pth
+model_rps.h5
