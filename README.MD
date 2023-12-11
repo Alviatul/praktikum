@@ -42,14 +42,5 @@ Model ini dilatih menggunakan dataset Pendapatan Dewasa, yang berisi informasi t
 
 - `app.py`: Berkas utama aplikasi Flask.
 - `templates/`: Berisi template HTML untuk merender halaman web.
-- `static/`: Berisi berkas statis seperti CSS atau JavaScript.
 - `model/`: Berisi model machine learning yang telah dilatih.
 - `requirements.txt`: Daftar semua dependensi Python untuk proyek ini.
-
-## Berkontribusi
-
-Jika Anda ingin berkontribusi pada proyek ini, jangan ragu untuk mengirim pull request.
-
-## Lisensi
-
-Proyek ini dilisensikan di bawah Lisensi MIT - lihat berkas [LICENSE](LICENSE) untuk informasi lebih lanjut.
