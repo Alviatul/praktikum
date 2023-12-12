@@ -5,7 +5,6 @@ import pandas as pd
 from flask import Flask, request, render_template
 from pytorch_tabnet.tab_model import TabNetClassifier
 
-# Load the TabNet model from h5 file using load_model
 model_path = './model.zip'  # Ganti dengan nama file model tanpa ekstensi .h5
 class_list = {
     'Income < 50k': 0,
