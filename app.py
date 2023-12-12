@@ -12,7 +12,7 @@ class_list = {
     'Income > 50k': 1
 }
 
-# Create a Flask web application
+# Inisialisasi Aplikasi
 app = Flask(__name__)
 
 # Define a route for the home page
@@ -48,7 +48,7 @@ def predict():
 
         # Tampilkan prediksi di halaman hasil
         return render_template('/prediksi.html', prediction=prediction_label, runtime=runtimes)
-
+# Jalankan Aplikasi
 if __name__ == '__main__':
     # Jalankan aplikasinya
     app.run(debug=True)
