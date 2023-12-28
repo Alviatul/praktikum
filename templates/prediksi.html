@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -36,10 +37,10 @@
         .prediction-container {
             background-color: #ffffff;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
             text-align: center;
-            max-width: 400px;
+            max-width: 500px;
             margin: 0 auto;
         }
 
@@ -47,16 +48,19 @@
         .runtime-info {
             margin-top: 20px;
             font-size: 0.8em;
+            color: #888;
         }
     </style>
 </head>
+
 <body>
     <div class="prediction-container">
         <h2>Hasil Prediksi</h2>
         <p>Hasil prediksi untuk gaji yang dimasukkan:</p>
-        <p><strong>Prediksi:</strong> {{ prediction }}</p>
+        <p style="font-size: 1.2em;"><strong>Prediksi:</strong> {{ prediction }}</p>
     </div>
 
     <p class="runtime-info"><strong>Runtime:</strong> {{ runtime }}</p>
 </body>
+
 </html>
