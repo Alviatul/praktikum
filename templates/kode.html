@@ -8,27 +8,42 @@
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f0f0f0;
-      margin: 20px;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
     }
 
-    h1 {
-      color: #333;
+    header {
+      background-color: #3498db;
+      padding: 20px 0;
       text-align: center;
+      color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    header p {
+      margin: 10px 0 0;
+      font-size: 18px;
+      color: #ecf0f1;
     }
 
     form {
       max-width: 400px;
-      margin: 0 auto;
+      margin: 20px auto;
       background-color: #fff;
       padding: 20px;
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     }
 
     label {
       display: block;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
       color: #555;
       font-weight: bold;
     }
@@ -36,10 +51,10 @@
     input,
     select {
       width: 100%;
-      padding: 10px;
-      margin-bottom: 12px;
+      padding: 12px;
+      margin-bottom: 16px;
       border: 1px solid #ccc;
-      border-radius: 4px;
+      border-radius: 6px;
       box-sizing: border-box;
     }
 
@@ -50,28 +65,40 @@
       background-image: url('data:image/svg+xml;utf8,<svg fill="#555" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z" /></svg>');
       background-repeat: no-repeat;
       background-position-x: 100%;
-      background-position-y: 10px;
+      background-position-y: 12px;
       background-size: 24px;
     }
 
     input[type="submit"] {
-      background-color: #4caf50;
+      background-color: #3498db;
       color: #fff;
-      padding: 12px;
+      padding: 14px;
       border: none;
-      border-radius: 4px;
+      border-radius: 6px;
       cursor: pointer;
-      font-size: 16px;
+      font-size: 18px;
     }
 
     input[type="submit"]:hover {
-      background-color: #45a049;
+      background-color: #2980b9;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #3498db;
+      color: #fff;
     }
   </style>
 </head>
 
 <body>
-  <h1>Ketentuan</h1>
+  <header>
+    <h1>Aplikasi Prediksi Gaji</h1>
+    <p>Prediksi gaji Anda dengan mudah dan cepat</p>
+  </header>
+
   <form action="/predict" method="post">
     <label for="age">Age:</label>
     <input type="text" id="age" name="age" required>
@@ -165,6 +192,10 @@
     <br /><br />
     <input type="submit" value="Prediksi" />
   </form>
+
+  <footer>
+    &copy; 2023 Aplikasi Prediksi Gaji
+  </footer>
 </body>
 
 </html>
